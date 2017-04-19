@@ -1,0 +1,15 @@
+C:\Users\nuno-\OneDrive\Documentos\Visual Studio 2015\Projects\TrabalhoLP2\TrabalhoLP2\bin\Release\TrabalhoLP2.exe.config
+C:\Users\nuno-\OneDrive\Documentos\Visual Studio 2015\Projects\TrabalhoLP2\TrabalhoLP2\bin\Release\TrabalhoLP2.exe
+C:\Users\nuno-\OneDrive\Documentos\Visual Studio 2015\Projects\TrabalhoLP2\TrabalhoLP2\bin\Release\TrabalhoLP2.pdb
+C:\Users\nuno-\OneDrive\Documentos\Visual Studio 2015\Projects\TrabalhoLP2\TrabalhoLP2\obj\Release\MainPage.g.cs
+C:\Users\nuno-\OneDrive\Documentos\Visual Studio 2015\Projects\TrabalhoLP2\TrabalhoLP2\obj\Release\ScrumBoard\ScrumBoardPage.g.cs
+C:\Users\nuno-\OneDrive\Documentos\Visual Studio 2015\Projects\TrabalhoLP2\TrabalhoLP2\obj\Release\App.g.cs
+C:\Users\nuno-\OneDrive\Documentos\Visual Studio 2015\Projects\TrabalhoLP2\TrabalhoLP2\obj\Release\TrabalhoLP2_MarkupCompile.cache
+C:\Users\nuno-\OneDrive\Documentos\Visual Studio 2015\Projects\TrabalhoLP2\TrabalhoLP2\obj\Release\TrabalhoLP2_MarkupCompile.lref
+C:\Users\nuno-\OneDrive\Documentos\Visual Studio 2015\Projects\TrabalhoLP2\TrabalhoLP2\obj\Release\MainPage.baml
+C:\Users\nuno-\OneDrive\Documentos\Visual Studio 2015\Projects\TrabalhoLP2\TrabalhoLP2\obj\Release\ScrumBoard\ScrumBoardPage.baml
+C:\Users\nuno-\OneDrive\Documentos\Visual Studio 2015\Projects\TrabalhoLP2\TrabalhoLP2\obj\Release\TrabalhoLP2.g.resources
+C:\Users\nuno-\OneDrive\Documentos\Visual Studio 2015\Projects\TrabalhoLP2\TrabalhoLP2\obj\Release\TrabalhoLP2.Properties.Resources.resources
+C:\Users\nuno-\OneDrive\Documentos\Visual Studio 2015\Projects\TrabalhoLP2\TrabalhoLP2\obj\Release\TrabalhoLP2.csproj.GenerateResource.Cache
+C:\Users\nuno-\OneDrive\Documentos\Visual Studio 2015\Projects\TrabalhoLP2\TrabalhoLP2\obj\Release\TrabalhoLP2.exe
+C:\Users\nuno-\OneDrive\Documentos\Visual Studio 2015\Projects\TrabalhoLP2\TrabalhoLP2\obj\Release\TrabalhoLP2.pdb
