@@ -59,6 +59,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Controllers\ProjetoControllers.cs" />
+    <Compile Include="Controllers\SubTarefaControllers.cs" />
+    <Compile Include="Controllers\TarefaControllers.cs" />
     <Compile Include="Controllers\UtilizadorControllers.cs" />
     <Compile Include="Models\Projeto.cs" />
     <Compile Include="Models\SubTarefa.cs" />
@@ -115,9 +118,7 @@
   <ItemGroup>
     <Resource Include="Images\Back_wood.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ScrumBoard\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

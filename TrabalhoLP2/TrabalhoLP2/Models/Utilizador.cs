@@ -11,9 +11,9 @@ namespace TrabalhoLP2.Models
         public Utilizador(string nome, string tipo)
         {
             Nome = nome;
-            Tipo = tipo;//designer, programador e scrum master
+            Tipo = tipo;//designer, programador, scrum master, project owner
             TrabalhoDisponivel = 5;
-            if (tipo=="Scrum Master")
+            if (tipo=="Scrum Master"||tipo=="Project Owner")
             {
                 TrabalhoDisponivel = 1;
             }

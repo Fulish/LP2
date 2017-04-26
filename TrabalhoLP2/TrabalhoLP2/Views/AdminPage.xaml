@@ -32,6 +32,7 @@
             <Button Name="ProgramadorButton" Click="ProgramadorButton_OnClick" Opacity="0.9" Margin="15,0,0,0" Height="25" Width="85" FontSize="14" Content="Programador"></Button>
             <Button Name="DesignerButton" Click="DesignerButton_OnClick" Opacity="0.9" Margin="5,0,0,0" Height="25" Width="85" FontSize="14" Content="Designer"></Button>
             <Button Name="ScrumMasterButton" Click="ScrumMasterButton_OnClick" Opacity="0.9" Margin="5,0,0,0" Height="25" Width="90" FontSize="14" Content="Scrum Master"></Button>
+            <Button Name="ProjectOwnerButton" Click="ProjectOwnerButton_OnClick" Opacity="0.9" Margin="5,0,0,0" Height="25" Width="93" FontSize="14" Content="Project Owner"></Button>
         </StackPanel>
         <Button Foreground="Beige" Name="OpcaoCriar" Grid.ColumnSpan="5" Click="Criacao_OnClick" Grid.Row="0" VerticalAlignment="Bottom" Width="170" Height="30" FontSize="17" BorderThickness="0" Background="Transparent" Margin="0,15,0,0" Content="Criar Novo Utilizador"></Button>
 

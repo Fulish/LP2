@@ -74,6 +74,7 @@ namespace TrabalhoLP2.Views
             ProgramadorButton.Background = Brushes.DarkSeaGreen;
             DesignerButton.Background = Brushes.DarkRed;
             ScrumMasterButton.Background = Brushes.DarkRed;
+            ProjectOwnerButton.Background = Brushes.DarkRed;
         }
 
         private void DesignerButton_OnClick(object sender, RoutedEventArgs e)
@@ -82,6 +83,7 @@ namespace TrabalhoLP2.Views
             ProgramadorButton.Background = Brushes.DarkRed;
             DesignerButton.Background = Brushes.DarkSeaGreen;
             ScrumMasterButton.Background = Brushes.DarkRed;
+            ProjectOwnerButton.Background = Brushes.DarkRed;
         }
         private void ScrumMasterButton_OnClick(object sender, RoutedEventArgs e)
         {
@@ -89,6 +91,15 @@ namespace TrabalhoLP2.Views
             ProgramadorButton.Background = Brushes.DarkRed;
             DesignerButton.Background = Brushes.DarkRed;
             ScrumMasterButton.Background = Brushes.DarkSeaGreen;
+            ProjectOwnerButton.Background = Brushes.DarkRed;
+        }
+        private void ProjectOwnerButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            tipo = "Project Owner";
+            ProgramadorButton.Background = Brushes.DarkRed;
+            DesignerButton.Background = Brushes.DarkRed;
+            ScrumMasterButton.Background = Brushes.DarkRed;
+            ProjectOwnerButton.Background = Brushes.DarkSeaGreen;
         }
 
         private void CriarProjetoPage_OnClick(object sender, RoutedEventArgs e)
