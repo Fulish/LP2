@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TrabalhoLP2.Models;
 
-namespace TrabalhoLP2.ScrumBoard
+namespace TrabalhoLP2.Controllers
 {
-    class UtilizadorController
+    class UtilizadorControllers
     {
         private List<Utilizador> utilizadoresList;
 
-        public UtilizadorController()
+        public UtilizadorControllers()
         {
             utilizadoresList = new List<Utilizador>();
         }
@@ -22,7 +23,7 @@ namespace TrabalhoLP2.ScrumBoard
 
         public bool DarTarefa(Utilizador utilizador)
         {
-            if (utilizador.TrabalhoDisponivel<1)
+            if (utilizador.TrabalhoDisponivel < 1)
             {
                 return false;
             }
@@ -38,7 +39,7 @@ namespace TrabalhoLP2.ScrumBoard
             List<string> listagem = new List<string>();
             foreach (Utilizador utilizador in utilizadoresList)
             {
-                listagem.Add(string.Concat("  " +utilizador.Nome + " [" + utilizador.TrabalhoDisponivel + "]"));
+                listagem.Add(string.Concat("  " + utilizador.Nome + "/" + utilizador.Tipo + " [" + utilizador.TrabalhoDisponivel + "]"));
             }
             return listagem;
         }

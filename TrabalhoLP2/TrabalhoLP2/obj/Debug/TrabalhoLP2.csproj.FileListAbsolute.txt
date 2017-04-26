@@ -14,3 +14,19 @@ C:\Users\nuno-\OneDrive\Documentos\Visual Studio 2015\Projects\TrabalhoLP2\Traba
 C:\Users\nuno-\OneDrive\Documentos\Visual Studio 2015\Projects\TrabalhoLP2\TrabalhoLP2\obj\Debug\TrabalhoLP2.pdb
 C:\Users\nuno-\OneDrive\Documentos\Visual Studio 2015\Projects\TrabalhoLP2\TrabalhoLP2\obj\Debug\ScrumBoard\ScrumBoardPage.g.cs
 C:\Users\nuno-\OneDrive\Documentos\Visual Studio 2015\Projects\TrabalhoLP2\TrabalhoLP2\obj\Debug\ScrumBoard\ScrumBoardPage.baml
+C:\Users\nuno-\OneDrive\Documentos\Source LP2\TrabalhoLP2\TrabalhoLP2\bin\Debug\TrabalhoLP2.exe.config
+C:\Users\nuno-\OneDrive\Documentos\Source LP2\TrabalhoLP2\TrabalhoLP2\obj\Debug\TrabalhoLP2.exe
+C:\Users\nuno-\OneDrive\Documentos\Source LP2\TrabalhoLP2\TrabalhoLP2\obj\Debug\TrabalhoLP2.pdb
+C:\Users\nuno-\OneDrive\Documentos\Source LP2\TrabalhoLP2\TrabalhoLP2\bin\Debug\TrabalhoLP2.exe
+C:\Users\nuno-\OneDrive\Documentos\Source LP2\TrabalhoLP2\TrabalhoLP2\bin\Debug\TrabalhoLP2.pdb
+C:\Users\nuno-\OneDrive\Documentos\Source LP2\TrabalhoLP2\TrabalhoLP2\obj\Debug\TrabalhoLP2.csprojResolveAssemblyReference.cache
+C:\Users\nuno-\OneDrive\Documentos\Source LP2\TrabalhoLP2\TrabalhoLP2\obj\Debug\App.g.cs
+C:\Users\nuno-\OneDrive\Documentos\Source LP2\TrabalhoLP2\TrabalhoLP2\obj\Debug\TrabalhoLP2_MarkupCompile.cache
+C:\Users\nuno-\OneDrive\Documentos\Source LP2\TrabalhoLP2\TrabalhoLP2\obj\Debug\TrabalhoLP2_MarkupCompile.lref
+C:\Users\nuno-\OneDrive\Documentos\Source LP2\TrabalhoLP2\TrabalhoLP2\obj\Debug\TrabalhoLP2.g.resources
+C:\Users\nuno-\OneDrive\Documentos\Source LP2\TrabalhoLP2\TrabalhoLP2\obj\Debug\TrabalhoLP2.Properties.Resources.resources
+C:\Users\nuno-\OneDrive\Documentos\Source LP2\TrabalhoLP2\TrabalhoLP2\obj\Debug\TrabalhoLP2.csproj.GenerateResource.Cache
+C:\Users\nuno-\OneDrive\Documentos\Source LP2\TrabalhoLP2\TrabalhoLP2\obj\Debug\Views\AdminPage.g.cs
+C:\Users\nuno-\OneDrive\Documentos\Source LP2\TrabalhoLP2\TrabalhoLP2\obj\Debug\Views\MainPage.g.cs
+C:\Users\nuno-\OneDrive\Documentos\Source LP2\TrabalhoLP2\TrabalhoLP2\obj\Debug\Views\AdminPage.baml
+C:\Users\nuno-\OneDrive\Documentos\Source LP2\TrabalhoLP2\TrabalhoLP2\obj\Debug\Views\MainPage.baml

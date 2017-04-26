@@ -59,24 +59,27 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ScrumBoard\ScrumBoardPage.xaml.cs">
-      <DependentUpon>ScrumBoardPage.xaml</DependentUpon>
+    <Compile Include="Controllers\UtilizadorControllers.cs" />
+    <Compile Include="Models\Projeto.cs" />
+    <Compile Include="Models\SubTarefa.cs" />
+    <Compile Include="Models\Tarefa.cs" />
+    <Compile Include="Models\Utilizador.cs" />
+    <Compile Include="Views\AdminPage.xaml.cs">
+      <DependentUpon>AdminPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ScrumBoard\Utilizador.cs" />
-    <Compile Include="ScrumBoard\UtilizadorController.cs" />
-    <Page Include="MainPage.xaml">
+    <Compile Include="Views\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Views\AdminPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ScrumBoard\ScrumBoardPage.xaml">
+    <Page Include="Views\MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -111,6 +114,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Back_wood.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ScrumBoard\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

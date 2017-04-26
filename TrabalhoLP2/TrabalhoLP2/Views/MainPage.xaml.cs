@@ -13,9 +13,10 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Diagnostics;
-using TrabalhoLP2.ScrumBoard;
+using TrabalhoLP2.Models;
+using TrabalhoLP2.Controllers;
 
-namespace TrabalhoLP2
+namespace TrabalhoLP2.Views
 {
     /// <summary>
     /// Interaction logic for MainPage.xaml
@@ -27,24 +28,24 @@ namespace TrabalhoLP2
             InitializeComponent();
         }
 
-        private void ScrumBoard_OnClick(object sender, RoutedEventArgs e)
+        private void AdminPage_OnClick(object sender, RoutedEventArgs e)
         {
-            ScrumButton.Visibility = Visibility.Hidden;
+            AdminButton.Visibility = Visibility.Hidden;
             Painel.Visibility = Visibility.Visible;
             TextScrumInfo.Visibility = Visibility.Hidden;
         }
 
-        private void Inicialize_OnClick(object sender, RoutedEventArgs e)
+        private void EmployeesButton_OnClick(object sender, RoutedEventArgs e)
         {
 
         }
 
         private void Password_OnClick(object sender, RoutedEventArgs e)
         {
-            if (Pass.Password=="desconfiado")
+            if (Pass.Password == "desconfiado")
             {
-                ScrumBoardPage scrumBoardPage = new ScrumBoardPage();
-                NavigationService.Navigate(scrumBoardPage);
+                AdminPage adminPage = new AdminPage();
+                NavigationService.Navigate(adminPage);
             }
             else
             {
