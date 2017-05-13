@@ -13,7 +13,6 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
 
 
@@ -21,11 +20,8 @@
 
 
         <Label Grid.Row="0" Foreground="Beige" HorizontalAlignment="Center"  FontSize="36" FontWeight="DemiBold" Content="Admin Page" Background="Transparent"></Label>
-        <StackPanel Grid.Row="0" Grid.ColumnSpan="5" VerticalAlignment="Center" Margin="0,30,0,0" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Label Foreground="Beige" Margin="0,-6,0,0" Content="Utilizadores Disponiveis:" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="16" FontWeight="Medium"></Label>
-            <Label Foreground="Beige" Name="Utilizadores" Margin="0,-3,0,0" Content="" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="13" FontWeight="Normal"></Label>
-        </StackPanel>
-        <StackPanel Visibility="Hidden" Name="Stack" Orientation="Horizontal" Grid.Row="0" Margin="0,5,0,0" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+
+        <StackPanel Visibility="Hidden" Name="Stack" Orientation="Horizontal" Grid.Row="0" Margin="0,30,0,0" VerticalAlignment="Center" HorizontalAlignment="Center">
             <Button Click="CriarUtilizador_OnClick" Opacity="0.9" Height="25" Width="100" FontSize="14" HorizontalAlignment="Center" Content="Criar utilizador"></Button>
             <Label Foreground="Beige" Margin="15,0,0,0" HorizontalAlignment="Center" FontSize="13" Content="Nome"></Label>
             <TextBox Foreground="Beige" Opacity="0.7" Width="100" TextAlignment="Justify" Height="25" Name="NomeNovoUtilizador" Background="Transparent"></TextBox>
@@ -33,10 +29,14 @@
             <Button Name="DesignerButton" Click="DesignerButton_OnClick" Opacity="0.9" Margin="5,0,0,0" Height="25" Width="85" FontSize="14" Content="Designer"></Button>
             <Button Name="ScrumMasterButton" Click="ScrumMasterButton_OnClick" Opacity="0.9" Margin="5,0,0,0" Height="25" Width="90" FontSize="14" Content="Scrum Master"></Button>
             <Button Name="ProjectOwnerButton" Click="ProjectOwnerButton_OnClick" Opacity="0.9" Margin="5,0,0,0" Height="25" Width="93" FontSize="14" Content="Project Owner"></Button>
+            <Button Name="ProjectManagerButton" Click="ProjectManagerButton_OnClick" Opacity="0.9" Margin="5,0,0,0" Height="25" Width="106" FontSize="14" Content="Project Manager"></Button>
         </StackPanel>
-        <Button Foreground="Beige" Name="OpcaoCriar" Grid.ColumnSpan="5" Click="Criacao_OnClick" Grid.Row="0" VerticalAlignment="Bottom" Width="170" Height="30" FontSize="17" BorderThickness="0" Background="Transparent" Margin="0,15,0,0" Content="Criar Novo Utilizador"></Button>
+        <Button Foreground="Beige" Name="OpcaoCriar" Grid.ColumnSpan="5" Click="Criacao_OnClick" Grid.Row="0" VerticalAlignment="Center" Width="170" Height="40" FontSize="17" BorderThickness="0" Background="Transparent" Margin="0,10,0,0" Content="Criar Novo Utilizador"></Button>
 
-        <Button Name="CriarProjetoButton" Grid.Row="1" Height="100" BorderBrush="Transparent" Click="CriarProjetoPage_OnClick" Foreground="Beige" Width="220" Content="Criar Novo Projeto" Background="Transparent" HorizontalAlignment="Stretch" FontSize="22" FontStyle="Italic" Margin="0,15,0,0" VerticalAlignment="Stretch">
+        <Button Foreground="Beige" Name="VerUtilizadores" Grid.ColumnSpan="5" Click="AllUtilizadoresPage_OnClick" Grid.Row="0" VerticalAlignment="Bottom" Width="170" Height="40" FontSize="17" BorderThickness="0" Background="Transparent" Margin="0,0,0,15" Content="Ver Utilizadores"></Button>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Button Name="CriarProjetoButton" Grid.Row="1" Height="100" BorderBrush="Transparent" Click="CriarProjetoPage_OnClick" Foreground="Beige" Width="220" Content="Criar Novo Projeto" Background="Transparent" HorizontalAlignment="Stretch" FontSize="20" FontStyle="Italic" Margin="0,0,10,0" VerticalAlignment="Stretch">
             <Button.OpacityMask>
                 <VisualBrush>
                     <VisualBrush.Visual>
@@ -48,18 +48,18 @@
             </Button.OpacityMask>
         </Button>
 
-        <Button Name="VerProjetosButton" Height="100" BorderBrush="Transparent" Click="VerProjetosPage_OnClick" Foreground="Beige" Width="220" Grid.Row="2" Content="Ver Projetos" Background="Transparent" HorizontalAlignment="Stretch" FontSize="22" FontStyle="Italic" VerticalAlignment="Stretch">
-            <Button.OpacityMask>
-                <VisualBrush>
-                    <VisualBrush.Visual>
-                        <Grid Width="{Binding Path=ActualWidth, RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}}" Height="{Binding Path=ActualHeight, RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}}">
-                            <Ellipse Fill="Black" />
-                        </Grid>
-                    </VisualBrush.Visual>
-                </VisualBrush>
-            </Button.OpacityMask>
-        </Button>
-
+            <Button Name="VerProjetosButton" Height="100" BorderBrush="Transparent" Click="VerProjetosPage_OnClick" Foreground="Beige" Width="220" Grid.Row="2" Content="Ver Projetos" Background="Transparent" HorizontalAlignment="Stretch" FontSize="20" FontStyle="Italic" VerticalAlignment="Stretch">
+                <Button.OpacityMask>
+                    <VisualBrush>
+                        <VisualBrush.Visual>
+                            <Grid Width="{Binding Path=ActualWidth, RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}}" Height="{Binding Path=ActualHeight, RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}}">
+                                <Ellipse Fill="Black" />
+                            </Grid>
+                        </VisualBrush.Visual>
+                    </VisualBrush>
+                </Button.OpacityMask>
+            </Button>
+        </StackPanel>
 
 
     </Grid>

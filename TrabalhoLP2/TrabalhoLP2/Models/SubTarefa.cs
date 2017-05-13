@@ -9,14 +9,16 @@ namespace TrabalhoLP2.Models
     class SubTarefa
     {
 
-        public SubTarefa(bool estado, string conteudo, Tarefa tarefapertencente)
+        public SubTarefa(string nome, string conteudo, Tarefa tarefapertencente)
         {
-            Estado = estado;
+            Estado = EnumEstados.Por_Comecar;
             Conteudo = conteudo;
             tarefaPertencente = tarefapertencente;
+            Nome = nome;
         }
 
-        public bool Estado { get; set; }
+        public string Nome { get; set; }
+        public EnumEstados Estado { get; set; }
         public string Conteudo { get; set; }
         public Tarefa tarefaPertencente { get; set; }
     }

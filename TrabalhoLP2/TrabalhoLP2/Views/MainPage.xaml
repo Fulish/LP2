@@ -39,10 +39,10 @@
         </StackPanel>
 
         <TextBlock Name="TextScrumInfo" Opacity="0.8" Margin="0,0,0,70" VerticalAlignment="Center" Grid.RowSpan="2" HorizontalAlignment="Center">
-            <Hyperlink NavigateUri="https://pt.wikipedia.org/wiki/Scrum_(desenvolvimento_de_software)" Foreground="Beige" Name="ScrumInfo" RequestNavigate="Scrum_RequestNavigate" FontStyle="Oblique">Clique para saber mais infomacao sobre este tipo de desenvolvimento de software</Hyperlink>
+            <Hyperlink NavigateUri="https://pt.wikipedia.org/wiki/Scrum_(desenvolvimento_de_software)" Foreground="Beige" Name="ScrumInfo" RequestNavigate="Scrum_RequestNavigate" FontStyle="Oblique">Clique para saber mais infomacao sobre o tipo de desenvolvimento de software usado</Hyperlink>
         </TextBlock>
 
-        <Button Click="EmployeesButton_OnClick" Foreground="Beige" Height="100" BorderBrush="Transparent" Grid.Row="1" Width="220" Content="Funcionarios Page" Background="Transparent" HorizontalAlignment="Stretch" FontSize="22" FontStyle="Italic" VerticalAlignment="Stretch">
+        <Button Click="ColaboradoresButton_OnClick" Foreground="Beige" Height="100" BorderBrush="Transparent" Grid.Row="1" Width="220" Content="Colaboradores Page" Background="Transparent" HorizontalAlignment="Stretch" FontSize="22" FontStyle="Italic" VerticalAlignment="Stretch">
             <Button.OpacityMask>
                 <VisualBrush>
                     <VisualBrush.Visual>

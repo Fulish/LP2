@@ -24,7 +24,7 @@ namespace TrabalhoLP2.Views
     public partial class AdminPage : Page
     {
         UtilizadorControllers utilizadoresControllers = new UtilizadorControllers();
-        string tipo = "";
+        EnumUtilizadores tipo = 0;
 
         public AdminPage()
         {
@@ -34,7 +34,7 @@ namespace TrabalhoLP2.Views
         private void CriarUtilizador_OnClick(object sender, RoutedEventArgs e)
         {
 
-            if (string.IsNullOrEmpty(NomeNovoUtilizador.Text)||tipo=="")
+            if (string.IsNullOrEmpty(NomeNovoUtilizador.Text)||tipo==0)
             {
                 MessageBox.Show("Nao pode deixar informaçao por preencher.", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
 
@@ -42,7 +42,7 @@ namespace TrabalhoLP2.Views
             else
             {
                 string user = "";
-                if (MessageBox.Show("Adicionar " + NomeNovoUtilizador.Text + " como " +tipo, "Aviso", MessageBoxButton.YesNo, MessageBoxImage.Question)==MessageBoxResult.No)
+                if (MessageBox.Show("Adicionar " + NomeNovoUtilizador.Text + " como " + tipo.ToString(), "Aviso", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.No)
                 {
 
                 }
@@ -50,14 +50,16 @@ namespace TrabalhoLP2.Views
                 {
                     Utilizador Pessoa = new Utilizador(NomeNovoUtilizador.Text, tipo);
                     utilizadoresControllers.InserirUtilizador(Pessoa);
-                    user = "  " + Pessoa.Nome + "/" + Pessoa.Tipo + "[" + Pessoa.TrabalhoDisponivel + "]";
-                    Utilizadores.Content += user;
+                    user = "  " + Pessoa.Nome + "/" + Pessoa.listaProfissoes[0];//VER ESTA CENINHAFOFA
+                    //Utilizadores.Content += user;
                 }
                 NomeNovoUtilizador.Text = "";
-                tipo = "";
+                tipo = 0;
                 ProgramadorButton.Background = Brushes.LightGray;
                 DesignerButton.Background = Brushes.LightGray;
                 ScrumMasterButton.Background = Brushes.LightGray;
+                ProjectManagerButton.Background = Brushes.LightGray;
+                ProjectOwnerButton.Background = Brushes.LightGray;
                 this.NavigationService.Refresh();
             }
         }
@@ -70,41 +72,60 @@ namespace TrabalhoLP2.Views
 
         private void ProgramadorButton_OnClick(object sender, RoutedEventArgs e)
         {
-            tipo = "Programador";
+            tipo = EnumUtilizadores.Programador;
             ProgramadorButton.Background = Brushes.DarkSeaGreen;
-            DesignerButton.Background = Brushes.DarkRed;
-            ScrumMasterButton.Background = Brushes.DarkRed;
-            ProjectOwnerButton.Background = Brushes.DarkRed;
+            DesignerButton.Background = Brushes.LightGray;
+            ScrumMasterButton.Background = Brushes.LightGray;
+            ProjectOwnerButton.Background = Brushes.LightGray;
+            ProjectManagerButton.Background = Brushes.LightGray;
         }
-
         private void DesignerButton_OnClick(object sender, RoutedEventArgs e)
         {
-            tipo = "Designer";
-            ProgramadorButton.Background = Brushes.DarkRed;
+            tipo = EnumUtilizadores.Designer;
+            ProgramadorButton.Background = Brushes.LightGray;
             DesignerButton.Background = Brushes.DarkSeaGreen;
-            ScrumMasterButton.Background = Brushes.DarkRed;
-            ProjectOwnerButton.Background = Brushes.DarkRed;
+            ScrumMasterButton.Background = Brushes.LightGray;
+            ProjectOwnerButton.Background = Brushes.LightGray;
+            ProjectManagerButton.Background = Brushes.LightGray;
         }
         private void ScrumMasterButton_OnClick(object sender, RoutedEventArgs e)
         {
-            tipo = "Scrum Master";
-            ProgramadorButton.Background = Brushes.DarkRed;
-            DesignerButton.Background = Brushes.DarkRed;
+            tipo = EnumUtilizadores.Scrum_Master;
+            ProgramadorButton.Background = Brushes.LightGray;
+            DesignerButton.Background = Brushes.LightGray;
             ScrumMasterButton.Background = Brushes.DarkSeaGreen;
-            ProjectOwnerButton.Background = Brushes.DarkRed;
+            ProjectOwnerButton.Background = Brushes.LightGray;
+            ProjectManagerButton.Background = Brushes.LightGray;
         }
         private void ProjectOwnerButton_OnClick(object sender, RoutedEventArgs e)
         {
-            tipo = "Project Owner";
-            ProgramadorButton.Background = Brushes.DarkRed;
-            DesignerButton.Background = Brushes.DarkRed;
-            ScrumMasterButton.Background = Brushes.DarkRed;
+            tipo = EnumUtilizadores.Project_Owner;
+            ProgramadorButton.Background = Brushes.LightGray;
+            DesignerButton.Background = Brushes.LightGray;
+            ScrumMasterButton.Background = Brushes.LightGray;
             ProjectOwnerButton.Background = Brushes.DarkSeaGreen;
+            ProjectManagerButton.Background = Brushes.LightGray;
+        }
+        private void ProjectManagerButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            tipo = EnumUtilizadores.Project_Manager;
+            ProgramadorButton.Background = Brushes.LightGray;
+            DesignerButton.Background = Brushes.LightGray;
+            ScrumMasterButton.Background = Brushes.LightGray;
+            ProjectOwnerButton.Background = Brushes.LightGray;
+            ProjectManagerButton.Background = Brushes.DarkSeaGreen;
+        }
+
+        private void AllUtilizadoresPage_OnClick(object sender, RoutedEventArgs e)
+        {
+            AllUtilizadoresPage utilizadoresPage = new AllUtilizadoresPage((utilizadoresControllers.ListarUtilizadores()));
+            NavigationService.Navigate(utilizadoresPage);
         }
 
         private void CriarProjetoPage_OnClick(object sender, RoutedEventArgs e)
         {
-
+            CriarProjetoPage criarProjetoPage = new CriarProjetoPage();
+            NavigationService.Navigate(criarProjetoPage);
         }
 
         private void VerProjetosPage_OnClick(object sender, RoutedEventArgs e)

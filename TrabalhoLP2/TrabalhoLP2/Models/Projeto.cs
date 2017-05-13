@@ -8,15 +8,22 @@ namespace TrabalhoLP2.Models
 {
     class Projeto
     {
-        public Projeto(bool estado, string conteudo, Utilizador owner)
+        public Projeto(string nome, string conteudo, Utilizador owner)
         {
-            Estado = estado;
+            Estado = EnumEstados.Por_Comecar;
+            Nome = nome;
             Conteudo = conteudo;
             Owner = owner;
+            Equipa = new List<Utilizador>();
+            listTarefas = new List<Tarefa>();
         }
 
-        public bool Estado { get; set; }
+        public List<Tarefa> listTarefas { get; set; }
+        public List<Utilizador> Equipa { get; set; }
+        public Utilizador ScrumMaster { get; set; }
+        public EnumEstados Estado { get; set; }
         public string Conteudo { get; set; }
+        public string Nome { get; set; }
         public Utilizador Owner { get; set; }
     }
 }

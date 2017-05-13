@@ -6,21 +6,18 @@ using System.Threading.Tasks;
 
 namespace TrabalhoLP2.Models
 {
-    class Utilizador
+    public class Utilizador
     {
-        public Utilizador(string nome, string tipo)
+        public Utilizador(string nome, EnumUtilizadores tipo)
         {
             Nome = nome;
-            Tipo = tipo;//designer, programador, scrum master, project owner
-            TrabalhoDisponivel = 5;
-            if (tipo=="Scrum Master"||tipo=="Project Owner")
-            {
-                TrabalhoDisponivel = 1;
-            }
+            listaProfissoes = new List<EnumUtilizadores>();
+            listaProfissoes.Add(tipo);
         }
 
+
         public string Nome { get; set; }
-        public int TrabalhoDisponivel { get; set; }
-        public string Tipo { get; set; }
+        public List<EnumUtilizadores> listaProfissoes { get; set; }
+        public string Email { get; set; }
     }
 }

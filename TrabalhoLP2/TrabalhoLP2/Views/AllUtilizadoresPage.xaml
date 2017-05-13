@@ -1,0 +1,46 @@
+﻿<Page x:Class="TrabalhoLP2.Views.AllUtilizadoresPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TrabalhoLP2.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="AllUtilizadoresPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.4*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="0.65*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Image Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="3" Source="/TrabalhoLP2;component/Images/Back_wood.jpg" Stretch="Fill"></Image>
+
+
+        <Label Grid.Row="0" Foreground="Beige" Grid.ColumnSpan="2" HorizontalAlignment="Center"  FontSize="36" FontWeight="DemiBold" Content="Utilizadores Page" Background="Transparent"></Label>
+
+        <StackPanel Name="ProgramadoresStack" Grid.Column="0" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Orientation="Vertical">
+            <Label Content="Programadores" FontSize="14" Foreground="Beige" Margin="120,0,0,20"></Label>
+        </StackPanel>
+
+        <StackPanel Name="DesignersStack" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Orientation="Vertical">
+            <Label Content="Designers" FontSize="14" Foreground="Beige" Margin="120,0,0,20"></Label>
+        </StackPanel>
+
+        <StackPanel Name="ScrumMastersStack" Grid.Column="0" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Left" Orientation="Vertical">
+            <Label Content="Scrum Masters" FontSize="14" Foreground="Beige" Margin="120,0,0,20"></Label>
+        </StackPanel>
+
+        <StackPanel Name="ProjectManagersStack" Grid.Column="1" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Left" Orientation="Vertical">
+            <Label Content="Project Managers" FontSize="14" Foreground="Beige" Margin="120,0,0,20"></Label>
+        </StackPanel>
+
+        
+    </Grid>
+</Page>

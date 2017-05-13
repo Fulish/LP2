@@ -21,25 +21,12 @@ namespace TrabalhoLP2.Controllers
             utilizadoresList.Add(utilizador);
         }
 
-        public bool DarTarefa(Utilizador utilizador)
+        public List<Utilizador> ListarUtilizadores()
         {
-            if (utilizador.TrabalhoDisponivel < 1)
-            {
-                return false;
-            }
-            else
-            {
-                utilizador.TrabalhoDisponivel = utilizador.TrabalhoDisponivel - 1;
-                return true;
-            }
-        }
-
-        public List<string> ListarUtilizadores()
-        {
-            List<string> listagem = new List<string>();
+            List<Utilizador> listagem = new List<Utilizador>();
             foreach (Utilizador utilizador in utilizadoresList)
             {
-                listagem.Add(string.Concat("  " + utilizador.Nome + "/" + utilizador.Tipo + " [" + utilizador.TrabalhoDisponivel + "]"));
+                listagem.Add(utilizador);
             }
             return listagem;
         }

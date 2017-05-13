@@ -35,7 +35,7 @@ namespace TrabalhoLP2.Views
             TextScrumInfo.Visibility = Visibility.Hidden;
         }
 
-        private void EmployeesButton_OnClick(object sender, RoutedEventArgs e)
+        private void ColaboradoresButton_OnClick(object sender, RoutedEventArgs e)
         {
 
         }

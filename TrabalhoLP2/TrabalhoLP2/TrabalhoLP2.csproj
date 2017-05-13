@@ -59,21 +59,48 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Controllers\BuggControllers.cs" />
     <Compile Include="Controllers\ProjetoControllers.cs" />
+    <Compile Include="Controllers\SprintControllers.cs" />
     <Compile Include="Controllers\SubTarefaControllers.cs" />
     <Compile Include="Controllers\TarefaControllers.cs" />
     <Compile Include="Controllers\UtilizadorControllers.cs" />
+    <Compile Include="Models\Bugg.cs" />
+    <Compile Include="Models\EnumEstados.cs" />
+    <Compile Include="Models\EnumUtilizadores.cs" />
     <Compile Include="Models\Projeto.cs" />
+    <Compile Include="Models\Sprint.cs" />
     <Compile Include="Models\SubTarefa.cs" />
     <Compile Include="Models\Tarefa.cs" />
     <Compile Include="Models\Utilizador.cs" />
     <Compile Include="Views\AdminPage.xaml.cs">
       <DependentUpon>AdminPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\AllUtilizadoresPage.xaml.cs">
+      <DependentUpon>AllUtilizadoresPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CriarProjetoPage.xaml.cs">
+      <DependentUpon>CriarProjetoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CriarTarefaPage.xaml.cs">
+      <DependentUpon>CriarTarefaPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Page Include="Views\AdminPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AllUtilizadoresPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CriarProjetoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CriarTarefaPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
