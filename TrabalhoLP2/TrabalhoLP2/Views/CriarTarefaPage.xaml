@@ -23,19 +23,42 @@
 
         <Image Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="3" Source="/TrabalhoLP2;component/Images/Back_wood.jpg" Stretch="Fill"></Image>
 
-        <Label Grid.Row="0" Foreground="Beige" Grid.ColumnSpan="2" HorizontalAlignment="Center"  FontSize="36" FontWeight="DemiBold" Content="Criar Tarefa Page" Background="Transparent"></Label>
+        <Label Name="TituloGrid" Grid.Row="0" Foreground="Beige" Grid.ColumnSpan="2" HorizontalAlignment="Center"  FontSize="36" FontWeight="DemiBold" Content="Criar Tarefa Page" Background="Transparent"></Label>
 
 
-        <StackPanel Name="InfoProjetoStack" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
+        <StackPanel Name="InfoTarefaStack" Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
             <StackPanel Orientation="Horizontal">
                 <Label Content="Nome Tarefa" FontSize="15" Foreground="Beige"></Label>
                 <TextBox Name="NomeTarefa" Height="21" Margin="0,0,0,3" Width="80"></TextBox>
                 <Label Content="Descrição" FontSize="15" Margin="35,0,0,0" Foreground="Beige"></Label>
                 <TextBox Name="DescricaoTarefa" Height="21" Margin="0,0,0,3" Width="80"></TextBox>
-                <Label Content="Nome User" FontSize="15" Margin="35,0,0,0" Foreground="Beige"></Label>
-                <TextBox Name="UserName" Height="21" Margin="0,0,0,3" Width="80"></TextBox>
+            </StackPanel>
+            
+            <StackPanel Margin="0,40,0,0" Name="ProgramadoresStack" Grid.Column="0" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Left" Orientation="Vertical">
+                <Label Content="Programadores:" FontSize="14" Foreground="Beige" Margin="120,0,0,20"></Label>
+            </StackPanel>
+
+            <StackPanel Name="DesignersStack" Grid.Column="1" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Left" Orientation="Vertical">
+                <Label Content="Designers:" FontSize="14" Foreground="Beige" Margin="120,0,0,20"></Label>
             </StackPanel>
             <Button Click="CriarTarefaButton_OnClick" Content="Criar Tarefa" Opacity="0.9" Height="25" Width="150" FontSize="15" Margin="0,65,0,0" Background="GhostWhite"></Button>
+        </StackPanel>
+
+        <StackPanel Visibility="Hidden" Name="EditarTarefa" Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
+            <Label Name="NomeTarefaDefinitivo" Margin="0,0,0,15"  FontSize="18" Foreground="Beige" Content="Nome Tarefa: "></Label>
+            <Label Name="DescricaoDefinitiva" Margin="0,0,0,15"  FontSize="18" Foreground="Beige" Content="Descrição: "></Label>
+            <Label Name="UserNome"  FontSize="18" Margin="0,0,0,15" Foreground="Beige" Content="User Tarefa: "></Label>
+            <Button Name="CriarSubtarefasButton" Grid.Row="1" Grid.Column="0" Height="100" BorderBrush="Transparent" Click="CriarSubTarefaButton_OnClick" Foreground="Beige" Width="220" Content="Criar Nova SubTarefa" Background="Transparent" HorizontalAlignment="Stretch" FontSize="20" FontStyle="Italic" Margin="0,30,0,0" VerticalAlignment="Stretch">
+                <Button.OpacityMask>
+                    <VisualBrush>
+                        <VisualBrush.Visual>
+                            <Grid Width="{Binding Path=ActualWidth, RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}}" Height="{Binding Path=ActualHeight, RelativeSource={RelativeSource FindAncestor, AncestorType=Button, AncestorLevel=1}}">
+                                <Ellipse Fill="Black" />
+                            </Grid>
+                        </VisualBrush.Visual>
+                    </VisualBrush>
+                </Button.OpacityMask>
+            </Button>
         </StackPanel>
     </Grid>
 </Page>

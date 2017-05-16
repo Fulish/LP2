@@ -34,3 +34,7 @@ C:\Users\nuno-\OneDrive\Documentos\Source LP2\TrabalhoLP2\TrabalhoLP2\obj\Debug\
 C:\Users\nuno-\OneDrive\Documentos\Source LP2\TrabalhoLP2\TrabalhoLP2\obj\Debug\Views\AllUtilizadoresPage.baml
 C:\Users\nuno-\OneDrive\Documentos\Source LP2\TrabalhoLP2\TrabalhoLP2\obj\Debug\Views\CriarProjetoPage.g.cs
 C:\Users\nuno-\OneDrive\Documentos\Source LP2\TrabalhoLP2\TrabalhoLP2\obj\Debug\Views\CriarProjetoPage.baml
+C:\Users\nuno-\OneDrive\Documentos\Source LP2\TrabalhoLP2\TrabalhoLP2\obj\Debug\Views\CriarTarefaPage.g.cs
+C:\Users\nuno-\OneDrive\Documentos\Source LP2\TrabalhoLP2\TrabalhoLP2\obj\Debug\Views\CriarTarefaPage.baml
+C:\Users\nuno-\OneDrive\Documentos\Source LP2\TrabalhoLP2\TrabalhoLP2\obj\Debug\Views\CriarSubTarefaPage.g.cs
+C:\Users\nuno-\OneDrive\Documentos\Source LP2\TrabalhoLP2\TrabalhoLP2\obj\Debug\Views\CriarSubTarefaPage.baml

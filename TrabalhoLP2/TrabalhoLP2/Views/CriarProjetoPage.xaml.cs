@@ -25,6 +25,8 @@ namespace TrabalhoLP2.Views
 
         Utilizador owner;
         Projeto NovoProj;
+        ProjetoControllers pqpp = new ProjetoControllers();
+
 
         public CriarProjetoPage()
         {
@@ -35,7 +37,8 @@ namespace TrabalhoLP2.Views
         {
             if (string.IsNullOrEmpty(NomeProjeto.Text)||string.IsNullOrEmpty(OwnerName.Text))
             {
-                MessageBox.Show("Preencha todos os espaços.", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Preencha todos os espaços obrigatorios.", "Aviso", MessageBoxButton.OK, MessageBoxImage.Warning);
+                NomeProjeto.Text = ""; OwnerName.Text = ""; DescricaoProjeto.Text = "";
                 this.NavigationService.Refresh();
             }
             else
@@ -44,12 +47,14 @@ namespace TrabalhoLP2.Views
                 {
                     owner = new Utilizador(OwnerName.Text, EnumUtilizadores.Project_Owner);
                     NovoProj = new Projeto(NomeProjeto.Text, DescricaoProjeto.Text, owner);
+                    pqpp.GravarProjeto(NovoProj);
                     InfoProjetoStack.Visibility = Visibility.Hidden;
                     CriarSprintButton.Visibility = Visibility.Visible;
                     CriarTarefaButton.Visibility = Visibility.Visible;
                     RelatarBuggButton.Visibility = Visibility.Visible;
                     GravarProjetoButton.Visibility = Visibility.Visible;
                     FazerEquipaButton.Visibility = Visibility.Visible;
+                    TituloGrid.Content = "Ver Projeto";
                 }
                 else
                 {
@@ -58,30 +63,29 @@ namespace TrabalhoLP2.Views
             }
         }
 
-        private void CriarTarefaPage_OnClick(object sender, RoutedEventArgs e)
+        private void CriarTarefaButton_OnClick(object sender, RoutedEventArgs e)
         {
-            CriarTarefaPage criarTarefaPage = new CriarTarefaPage();
+            CriarTarefaPage criarTarefaPage = new CriarTarefaPage(NovoProj);
             NavigationService.Navigate(criarTarefaPage);
         }
 
-        private void CriarBuggPage_OnClick(object sender, RoutedEventArgs e)
+        private void CriarBuggButton_OnClick(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void CriarSprintPage_OnClick(object sender, RoutedEventArgs e)
+        private void CriarSprintButton_OnClick(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void FazerEquipaPage_OnClick(object sender, RoutedEventArgs e)
+        private void FazerEquipaButton_OnClick(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void GravarProjeto_OnClick(object sender, RoutedEventArgs e)
+        private void GravarProjetoButton_OnClick(object sender, RoutedEventArgs e)
         {
-            ProjetoControllers pqpp = new ProjetoControllers();
             pqpp.GravarProjeto(NovoProj);
             MessageBox.Show("Projeto Gravado Com Sucesso!!!","Concluido",MessageBoxButton.OK,MessageBoxImage.Information);
         }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrabalhoLP2.Models
 {
-    class Bugg
+    public class Bugg
     {
         public Bugg(string nome, string conteudo, Projeto projetopertencente)
         {

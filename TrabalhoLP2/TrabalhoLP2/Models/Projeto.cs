@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrabalhoLP2.Models
 {
-    class Projeto
+    public class Projeto
     {
         public Projeto(string nome, string conteudo, Utilizador owner)
         {

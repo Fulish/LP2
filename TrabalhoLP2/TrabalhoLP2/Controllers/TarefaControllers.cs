@@ -24,13 +24,24 @@ namespace TrabalhoLP2.Controllers
 
         public bool GravarTarefaEmProjeto(Tarefa tarefa)
         {
-            string[] infoTarefa = new string[2];
-            infoTarefa[0] = tarefa.User.ToString();
+            string[] infoTarefa = new string[4];
+            infoTarefa[0] = tarefa.Nome;
             infoTarefa[1] = tarefa.Conteudo;
             infoTarefa[2] = tarefa.Estado.ToString();
-            string ficheiro = Path.Combine(@"..\..\..\" + tarefa.projetoPertencente.Nome + @"\Tarefas", tarefa.Nome);
-            File.WriteAllLines(ficheiro, infoTarefa);
-            Directory.CreateDirectory(Path.Combine(ficheiro,"SubTarefas"));
+            if (tarefa.User==null)
+            {
+                infoTarefa[3] = "";
+            }
+            else
+            {
+
+                infoTarefa[3] = tarefa.User.Nome;
+            }
+            Directory.CreateDirectory(@"..\..\..\" + tarefa.projetoPertencente.Nome + @"\Tarefas" + @"\" + tarefa.Nome);
+            string infoPath = Path.Combine(@"..\..\..\" + tarefa.projetoPertencente.Nome + @"\Tarefas" + @"\" + tarefa.Nome, "Tarefa_Info");
+            string subTarefasPath = Path.Combine(@"..\..\..\" + tarefa.projetoPertencente.Nome + @"\Tarefas", tarefa.Nome);
+            File.WriteAllLines(infoPath, infoTarefa);
+            Directory.CreateDirectory(Path.Combine(subTarefasPath,"SubTarefas"));
 
             return true;
         }

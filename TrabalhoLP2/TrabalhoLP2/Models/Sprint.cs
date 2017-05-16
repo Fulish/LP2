@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrabalhoLP2.Models
 {
-    class Sprint
+    public class Sprint
     {
         public Sprint(string id, int diafinal, int mesfinal, int anofinal, List<Tarefa> listtarefas, Projeto projetopertencente)
         {

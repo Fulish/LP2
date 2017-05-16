@@ -82,6 +82,9 @@
     <Compile Include="Views\CriarProjetoPage.xaml.cs">
       <DependentUpon>CriarProjetoPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\CriarSubTarefaPage.xaml.cs">
+      <DependentUpon>CriarSubTarefaPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\CriarTarefaPage.xaml.cs">
       <DependentUpon>CriarTarefaPage.xaml</DependentUpon>
     </Compile>
@@ -97,6 +100,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\CriarProjetoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CriarSubTarefaPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

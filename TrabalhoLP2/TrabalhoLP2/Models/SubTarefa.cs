@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrabalhoLP2.Models
 {
-    class SubTarefa
+    public class SubTarefa
     {
 
         public SubTarefa(string nome, string conteudo, Tarefa tarefapertencente)

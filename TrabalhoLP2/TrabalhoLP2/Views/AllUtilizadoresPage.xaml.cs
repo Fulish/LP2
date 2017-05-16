@@ -23,6 +23,7 @@ namespace TrabalhoLP2.Views
     public partial class AllUtilizadoresPage : Page
     {
         List<Utilizador> listUsers;
+
         public AllUtilizadoresPage(List<Utilizador> listUtilizadores)
         {
             listUsers = listUtilizadores;
@@ -51,6 +52,66 @@ namespace TrabalhoLP2.Views
                     ProgramadoresStack.Children.Add(newstack);
 
                 }
+
+                else if (user.listaProfissoes.Contains(EnumUtilizadores.Designer))
+                {
+                    StackPanel newstack = new StackPanel();
+                    newstack.Orientation = Orientation.Horizontal;
+                    Label infoUser = new Label();
+                    infoUser.Content = "-> " + user.Nome + " " + user.Email + "                         ";
+                    infoUser.Foreground = Brushes.Beige;
+                    Button editUserButton = new Button();
+                    //EditarButton_OnClick(editUserButton, new RoutedEventArgs());
+                    editUserButton.Content = "Editar";
+                    Button removeUserButton = new Button();
+                    removeUserButton.Click += new RoutedEventHandler(ApagarButton_OnClick);
+                    //ApagarButton_OnClick(removeUserButton, new RoutedEventArgs());
+                    removeUserButton.Content = "Apagar";
+                    newstack.Children.Add(infoUser);
+                    newstack.Children.Add(editUserButton);
+                    newstack.Children.Add(removeUserButton);
+                    DesignersStack.Children.Add(newstack);
+                }
+                else if (user.listaProfissoes.Contains(EnumUtilizadores.Scrum_Master))
+                {
+                    StackPanel newstack = new StackPanel();
+                    newstack.Orientation = Orientation.Horizontal;
+                    Label infoUser = new Label();
+                    infoUser.Content = "-> " + user.Nome + " " + user.Email + "                         ";
+                    infoUser.Foreground = Brushes.Beige;
+                    Button editUserButton = new Button();
+                    //EditarButton_OnClick(editUserButton, new RoutedEventArgs());
+                    editUserButton.Content = "Editar";
+                    Button removeUserButton = new Button();
+                    removeUserButton.Click += new RoutedEventHandler(ApagarButton_OnClick);
+                    //ApagarButton_OnClick(removeUserButton, new RoutedEventArgs());
+                    removeUserButton.Content = "Apagar";
+                    newstack.Children.Add(infoUser);
+                    newstack.Children.Add(editUserButton);
+                    newstack.Children.Add(removeUserButton);
+                    ScrumMastersStack.Children.Add(newstack);
+
+                }
+                else if (user.listaProfissoes.Contains(EnumUtilizadores.Project_Owner))
+                {
+                    StackPanel newstack = new StackPanel();
+                    newstack.Orientation = Orientation.Horizontal;
+                    Label infoUser = new Label();
+                    infoUser.Content = "-> " + user.Nome + " " + user.Email + "                         ";
+                    infoUser.Foreground = Brushes.Beige;
+                    Button editUserButton = new Button();
+                    //EditarButton_OnClick(editUserButton, new RoutedEventArgs());
+                    editUserButton.Content = "Editar";
+                    Button removeUserButton = new Button();
+                    removeUserButton.Click += new RoutedEventHandler(ApagarButton_OnClick);
+                    //ApagarButton_OnClick(removeUserButton, new RoutedEventArgs());
+                    removeUserButton.Content = "Apagar";
+                    newstack.Children.Add(infoUser);
+                    newstack.Children.Add(editUserButton);
+                    newstack.Children.Add(removeUserButton);
+                    ProjectOwnerStack.Children.Add(newstack);
+
+                }
             }
 
         }
@@ -70,6 +131,7 @@ namespace TrabalhoLP2.Views
             {
                 //por a remover stack
             }
+            this.NavigationService.Refresh();
         }
     }
 }

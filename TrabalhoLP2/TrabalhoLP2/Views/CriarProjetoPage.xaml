@@ -23,7 +23,7 @@
 
         <Image Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="3" Source="/TrabalhoLP2;component/Images/Back_wood.jpg" Stretch="Fill"></Image>
 
-        <Label Grid.Row="0" Foreground="Beige" Grid.ColumnSpan="2" HorizontalAlignment="Center"  FontSize="36" FontWeight="DemiBold" Content="Criar Projeto Page" Background="Transparent"></Label>
+        <Label Name="TituloGrid" Grid.Row="0" Foreground="Beige" Grid.ColumnSpan="2" HorizontalAlignment="Center"  FontSize="36" FontWeight="DemiBold" Content="Criar Projeto Page" Background="Transparent"></Label>
 
 
 
@@ -40,7 +40,7 @@
         </StackPanel>
 
 
-        <Button Visibility="Hidden" Name="CriarTarefaButton" Grid.Row="1" Grid.Column="0" Height="100" BorderBrush="Transparent" Click="CriarTarefaPage_OnClick" Foreground="Beige" Width="220" Content="Criar Nova Tarefa" Background="Transparent" HorizontalAlignment="Stretch" FontSize="20" FontStyle="Italic" Margin="0,0,10,0" VerticalAlignment="Stretch">
+        <Button Visibility="Hidden" Name="CriarTarefaButton" Grid.Row="1" Grid.Column="0" Height="100" BorderBrush="Transparent" Click="CriarTarefaButton_OnClick" Foreground="Beige" Width="220" Content="Criar Nova Tarefa" Background="Transparent" HorizontalAlignment="Stretch" FontSize="20" FontStyle="Italic" Margin="0,0,10,0" VerticalAlignment="Stretch">
             <Button.OpacityMask>
                 <VisualBrush>
                     <VisualBrush.Visual>
@@ -52,7 +52,7 @@
             </Button.OpacityMask>
         </Button>
 
-        <Button Visibility="Hidden" Name="RelatarBuggButton" Height="100" BorderBrush="Transparent" Click="CriarBuggPage_OnClick" Foreground="Beige" Width="220" Grid.Row="1" Grid.Column="1" Content="Relatar Bugg" Background="Transparent" HorizontalAlignment="Stretch" FontSize="20" FontStyle="Italic" VerticalAlignment="Stretch">
+        <Button Visibility="Hidden" Name="RelatarBuggButton" Height="100" BorderBrush="Transparent" Click="CriarBuggButton_OnClick" Foreground="Beige" Width="220" Grid.Row="1" Grid.Column="1" Content="Relatar Bugg" Background="Transparent" HorizontalAlignment="Stretch" FontSize="20" FontStyle="Italic" VerticalAlignment="Stretch">
             <Button.OpacityMask>
                 <VisualBrush>
                     <VisualBrush.Visual>
@@ -64,7 +64,7 @@
             </Button.OpacityMask>
         </Button>
 
-        <Button Visibility="Hidden" Name="CriarSprintButton" Grid.Row="2" Grid.Column="0" Height="100" BorderBrush="Transparent" Click="CriarSprintPage_OnClick" Foreground="Beige" Width="220" Content="Criar Novo Sprint" Background="Transparent" HorizontalAlignment="Stretch" FontSize="20" FontStyle="Italic" Margin="0,0,10,0" VerticalAlignment="Stretch">
+        <Button Visibility="Hidden" Name="CriarSprintButton" Grid.Row="2" Grid.Column="0" Height="100" BorderBrush="Transparent" Click="CriarSprintButton_OnClick" Foreground="Beige" Width="220" Content="Criar Novo Sprint" Background="Transparent" HorizontalAlignment="Stretch" FontSize="20" FontStyle="Italic" Margin="0,0,10,0" VerticalAlignment="Stretch">
             <Button.OpacityMask>
                 <VisualBrush>
                     <VisualBrush.Visual>
@@ -76,7 +76,7 @@
             </Button.OpacityMask>
         </Button>
 
-        <Button Visibility="Hidden" Name="FazerEquipaButton" Grid.Row="2" Grid.Column="1" Height="100" BorderBrush="Transparent" Click="FazerEquipaPage_OnClick" Foreground="Beige" Width="220" Content="Fazer Equipa" Background="Transparent" HorizontalAlignment="Stretch" FontSize="20" FontStyle="Italic" Margin="0,0,10,0" VerticalAlignment="Stretch">
+        <Button Visibility="Hidden" Name="FazerEquipaButton" Grid.Row="2" Grid.Column="1" Height="100" BorderBrush="Transparent" Click="FazerEquipaButton_OnClick" Foreground="Beige" Width="220" Content="Fazer Equipa" Background="Transparent" HorizontalAlignment="Stretch" FontSize="20" FontStyle="Italic" Margin="0,0,10,0" VerticalAlignment="Stretch">
             <Button.OpacityMask>
                 <VisualBrush>
                     <VisualBrush.Visual>
@@ -88,7 +88,7 @@
             </Button.OpacityMask>
         </Button>
 
-        <Button Visibility="Hidden" Name="GravarProjetoButton" Grid.ColumnSpan="2" Height="100" BorderBrush="Transparent" Click="GravarProjeto_OnClick" Foreground="Beige" Width="220" Grid.Row="2" Content="Gravar Projeto" Background="Transparent" HorizontalAlignment="Center" FontSize="20" FontStyle="Italic" VerticalAlignment="Bottom">
+        <Button Visibility="Hidden" Name="GravarProjetoButton" Grid.ColumnSpan="2" Height="100" BorderBrush="Transparent" Click="GravarProjetoButton_OnClick" Foreground="Beige" Width="220" Grid.Row="2" Content="Gravar Projeto" Background="Transparent" HorizontalAlignment="Center" FontSize="20" FontStyle="Italic" VerticalAlignment="Bottom">
             <Button.OpacityMask>
                 <VisualBrush>
                     <VisualBrush.Visual>

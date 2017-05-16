@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrabalhoLP2.Models
 {
-    class Tarefa
+    public class Tarefa
     {
         public Tarefa(string nome, string conteudo, Utilizador user, Projeto projetopertencente)
         {

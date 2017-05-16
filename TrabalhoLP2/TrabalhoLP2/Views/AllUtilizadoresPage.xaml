@@ -37,8 +37,8 @@
             <Label Content="Scrum Masters" FontSize="14" Foreground="Beige" Margin="120,0,0,20"></Label>
         </StackPanel>
 
-        <StackPanel Name="ProjectManagersStack" Grid.Column="1" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Left" Orientation="Vertical">
-            <Label Content="Project Managers" FontSize="14" Foreground="Beige" Margin="120,0,0,20"></Label>
+        <StackPanel Name="ProjectOwnerStack" Grid.Column="1" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Left" Orientation="Vertical">
+            <Label Content="Project Owners" FontSize="14" Foreground="Beige" Margin="120,0,0,20"></Label>
         </StackPanel>
 
         
